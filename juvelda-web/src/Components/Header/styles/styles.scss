@@ -1,0 +1,34 @@
+body {
+    background-image: url("../images/test-image.jpg");
+}
+
+//make font and color function
+
+.header-cotainer {
+    background-color: #D24747;
+    opacity: 0.6;
+    width: 60%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .company-header-name {
+        border: 2px solid #272838;
+        margin-bottom: 200px;
+        font-family: 'Montserrat', sans-serif; 
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        .test {
+            border: 2px solid white;
+            width: 50%;
+            margin-left: 25%;
+        }
+    }
+    .company-description {
+        border: 2px solid #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+}

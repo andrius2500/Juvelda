@@ -1,0 +1,43 @@
+body {
+  background-image: url("../images/test-image.jpg");
+}
+
+.header-cotainer {
+  background-color: #D24747;
+  opacity: 0.6;
+  width: 60%;
+  margin: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-cotainer .company-header-name {
+  border: 2px solid #272838;
+  margin-bottom: 200px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.header-cotainer .company-header-name .test {
+  border: 2px solid white;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.header-cotainer .company-description {
+  border: 2px solid #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */

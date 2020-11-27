@@ -1,12 +1,14 @@
 import React from 'react';
 
-import ScreensRoot from "./Screens/Root";
+//import ScreensRoot from "./Screens/Root";
+import Header from "../src/Components/Header";
 
 
 function App() {
   return (
     <div>
-      <ScreensRoot />
+      {/* <ScreensRoot /> */}
+      <Header />
     </div>
   );
 }
