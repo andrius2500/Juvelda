@@ -1,34 +1,44 @@
+//need to make it RESPONSIVE
 body {
-    background-image: url("../images/test-image.jpg");
+    background-image: url("../images/test-image.jpg"); //background image need to be changed
 }
 
-//make font and color function
+$primaryBackgroundColor: rgba(210, 71, 71, 0.7);
+$textColor: #FFFFFF;
+$secondaryBackgroundColor: #272838;
 
 .header-cotainer {
-    background-color: #D24747;
-    opacity: 0.6;
-    width: 60%;
+    background-color: $primaryBackgroundColor;
+    width: 50%;
     margin: auto;
     height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    .company-header-name {
-        border: 2px solid #272838;
-        margin-bottom: 200px;
-        font-family: 'Montserrat', sans-serif; 
-        color: white;
+    .company-header {
+        margin-bottom: 60px;
+        font-family: 'Montserrat', sans-serif; //Font need to be fixec
+        color: $textColor;
         font-size: 50px;
         text-align: center;
-        .test {
-            border: 2px solid white;
-            width: 50%;
-            margin-left: 25%;
+        .company-header__name {
+            width: 55%;
+            margin: auto;
         }
     }
-    .company-description {
-        border: 2px solid #FFFFFF;
+
+    .company-description__paragraph {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        background-color: $secondaryBackgroundColor;
+        height: 7vh;
+        text-transform: uppercase;
+        font-size: 35px;
+        font-weight: 800;
         font-family: 'Montserrat', sans-serif;
-        color: white;
+        color: $textColor;
+        padding-top: 15px;
+        border-radius: 10px;
     }
 }

@@ -5,13 +5,11 @@ function Header() {
     return (
         <div>
             <div className="header-cotainer">
-                <div className="company-header-name">
-                    <div className="test">
-                        <h1>UAB "Juvelda"</h1>
-                    </div>
+                <div className="company-header">
+                    <h1 className="company-header__name">UAB "Juvelda"</h1>
                 </div>
                 <div className="company-description">
-                    <h3>profesionalus padangų servisas</h3>
+                    <h3 className="company-description__paragraph">profesionalus padangų servisas</h3>
                 </div>
             </div>
         </div>
