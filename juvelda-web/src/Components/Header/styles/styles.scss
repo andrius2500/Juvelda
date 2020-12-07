@@ -1,11 +1,11 @@
+$primaryBackgroundColor: rgba(210, 71, 71, 0.7);
+$textColor: #FFFFFF;
+$secondaryBackgroundColor: #272838;
+
 //need to make it RESPONSIVE
 body {
     background-image: url("../images/test-image.jpg"); //background image need to be changed
 }
-
-$primaryBackgroundColor: rgba(210, 71, 71, 0.7);
-$textColor: #FFFFFF;
-$secondaryBackgroundColor: #272838;
 
 .header-cotainer {
     background-color: $primaryBackgroundColor;
