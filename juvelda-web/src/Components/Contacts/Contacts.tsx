@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles/styles.css";
 
+//change class names
+
 function Contacts() {
     return (
         <div className="component-container">

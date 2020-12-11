@@ -5,6 +5,7 @@ import Header from "../src/Components/Header";
 import RegistrationForm from "../src/Components/RegistrationForm";
 import Service from "../src/Components/Service";
 import Contacts from "../src/Components/Contacts";
+import Footer from "../src/Components/Footer";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       {/* 
       <Service /> */}
       <Contacts />
+      <Footer />
     </div>
   );
 }
