@@ -1,10 +1,10 @@
 import React from "react";
-// import "./styles/styles.css";
+import "./styles/styles.scss";
 
 function Service() {
     return (
         <div>
-            <div className="">
+            <div className="serviceContainer">
 
             </div>
         </div>

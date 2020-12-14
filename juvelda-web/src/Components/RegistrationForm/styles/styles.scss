@@ -1,0 +1,13 @@
+.registrationContainer { 
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  .registrationRedLine {
+    height: 10vh;
+    background-color: #D24747;
+  }
+  .registrationMainContext { 
+    height: 90vh;      
+    background-color: #ffffff;
+  }
+}

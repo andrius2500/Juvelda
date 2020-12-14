@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, TextField, Modal } from "@material-ui/core";
 import { Form, Formik } from "formik";
+import '../RegistrationForm/styles/styles.scss'
 
 interface Values {
     fullName: string;
@@ -14,67 +15,72 @@ interface Props {
 }
 
 
-const RegistrationForm: React.FC<Props> = ({saveToDatabase}) => {
-    
+const RegistrationForm: React.FC<Props> = ({ saveToDatabase }) => {
+
     return (
-        <div>
-            <Formik 
-                initialValues={{
-                    fullName: '',
-                    email: '',
-                    phone: '',
-                    licensePlate: ''
-                }}
-                onSubmit={values => {
-                    saveToDatabase(values)
-                }}
+
+
+        <div className='registrationContainer'>
+            <div className='registrationRedLine'></div>
+            <div className='registrationMainContext'>
+                {/* <Formik
+                    initialValues={{
+                        fullName: '',
+                        email: '',
+                        phone: '',
+                        licensePlate: ''
+                    }}
+                    onSubmit={values => {
+                        saveToDatabase(values)
+                    }}
                 >
-            {({values, handleChange, handleBlur}) => (
-                <Form>
-                    <div>
-                    <TextField
-                        name="fullName"
-                        placeholder="Vardas ir pavardė"
-                        value={values.fullName}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                    />
-                    </div>
-                    <div>
-                    <TextField
-                        name="email"
-                        placeholder="El. pašto adresas"
-                        value={values.email}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                    />
-                    </div>
-                    <div>
-                    <TextField
-                        name="phone"
-                        placeholder="Tel. numeris"
-                        value={values.phone}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                    />
-                    </div>
-                    <div>
-                    <TextField
-                        name="licensePlate"
-                        placeholder="Automobilio valst. nr."
-                        value={values.licensePlate}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                    />
-                    </div>
-                    <Button type="submit">Registruotis</Button>
-                    <pre>
-                        {JSON.stringify(values, null, 2)}
-                    </pre>
-                </Form>
-            )}
-            </Formik>
-        </div>
+                    {({ values, handleChange, handleBlur }) => (
+                        <Form>
+                            <div>
+                                <TextField
+                                    name="fullName"
+                                    placeholder="Vardas ir pavardė"
+                                    value={values.fullName}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                />
+                            </div>
+                            <div>
+                                <TextField
+                                    name="email"
+                                    placeholder="El. pašto adresas"
+                                    value={values.email}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                />
+                            </div>
+                            <div>
+                                <TextField
+                                    name="phone"
+                                    placeholder="Tel. numeris"
+                                    value={values.phone}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                />
+                            </div>
+                            <div>
+                                <TextField
+                                    name="licensePlate"
+                                    placeholder="Automobilio valst. nr."
+                                    value={values.licensePlate}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                />
+                            </div>
+                            <Button type="submit">Registruotis</Button>
+                            <pre>
+                                {JSON.stringify(values, null, 2)}
+                            </pre>
+                        </Form>
+                    )}
+                </Formik> */}
+            </div>
+        </div >
     )
 }
 
