@@ -3,43 +3,43 @@ $font: 'Montserrat', sans-serif;
 
 .footer {
     background-color: #D24747;
-    height: 14vh;
+    height: 15vh;
 }
 
-.component-container__footer {
-    height: 14vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-}
+// .component-container__footer {
+//     height: 14vh;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     text-align: center;
+// }
 
-.contact-header {
-    color: $fontColor;
-    font-family: $font;
-    font-size: 12px;
-        &__name {
-            font-size: 23px;
-            font-weight: normal;
-            margin-top: 30px;
-        }
-}
+// .contact-header {
+//     color: $fontColor;
+//     font-family: $font;
+//     font-size: 12px;
+//         &__name {
+//             font-size: 23px;
+//             font-weight: normal;
+//             margin-top: 30px;
+//         }
+// }
 
-.links {
-    color: $fontColor;
-    font-family: $font;
-    font-size: 12px;
-        &__policy {
-            margin-top: 30px;
-        }
-}
+// .links {
+//     color: $fontColor;
+//     font-family: $font;
+//     font-size: 12px;
+//         &__policy {
+//             margin-top: 30px;
+//         }
+// }
 
-.date {
-    color: $fontColor;
-    font-family: $font;
-    font-size: 12px;
-        &__year {
-            margin-top: 50px;
-            font-size: 15px;
-        }
-}
+// .date {
+//     color: $fontColor;
+//     font-family: $font;
+//     font-size: 12px;
+//         &__year {
+//             margin-top: 50px;
+//             font-size: 15px;
+//         }
+// }
 

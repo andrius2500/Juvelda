@@ -1,79 +1,82 @@
-.component-container {
+.contacts-container {
   background-color: #272838;
-  height: 60vh;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.component-container__contact {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+.contacts-container .contact-container {
+  font-size: 10px;
+  text-align: center;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.contact-header-container {
-  color: #272838;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.contact-header-container .contact-header {
-  background-color: #FFFFFF;
-  color: #272838;
-  width: 30%;
+.contacts-container .contact-container .contact-header__container {
+  width: 50%;
+  height: 5%;
+  background-color: #ffffff;
   border-radius: 5px;
-  margin-left: 10%;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.adress .adress__location {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+.contacts-container .contact-container .contact-header__container .contact-header__text {
+  font-size: 15px;
+  color: #272838;
 }
 
-.adress .adress__email {
-  margin-bottom: -10px;
-}
-
-.contact-container {
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.work-time {
-  margin-top: 70px;
-}
-
-.work-time .work-time__name {
-  font-weight: bold;
-}
-
-.work-time .work-time__workday--words {
-  font-weight: 500;
-  margin-bottom: -10px;
-}
-
-.work-time .work-time__saturday--words {
-  font-weight: 500;
-  margin-bottom: -10px;
-}
-
-.work-time .work-time__sunday {
-  font-weight: 500;
-  margin-bottom: -10px;
-}
-
-.map-container {
-  margin-right: 50px;
-}
-
-.map-container .map-container__location {
-  width: 100%;
-  height: 45vh;
-  margin-top: 20px;
-  border-radius: 10px;
+@media (min-width: 1024px) {
+  .contacts-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contacts-container .contact-container {
+    font-size: 15px;
+    padding-right: 70px;
+  }
+  .contacts-container .contact-container .contact-header__container {
+    width: 80%;
+  }
+  .contacts-container .contact-container .contact-header__container .contact-header__text {
+    font-size: 30px;
+    margin: 0px;
+  }
+  .contacts-container .map-container__location {
+    width: 50vw;
+    height: 50vh;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

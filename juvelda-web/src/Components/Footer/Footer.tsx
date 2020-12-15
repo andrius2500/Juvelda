@@ -6,7 +6,7 @@ import "./styles/styles.css";
 function Footer() {
     return (
         <div className="footer">
-            <div className="component-container__footer">
+            {/* <div className="component-container__footer">
                 <div className="contact-header">
                     <h2 className="contact-header__name">UAB "Juvelda"</h2>
                     <p className="contact-header__description">Profesionalus padangų servisas</p>
@@ -19,7 +19,7 @@ function Footer() {
                 <div className="date">
                     <p className="date__year">Vilnius, 2021</p>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
