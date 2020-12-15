@@ -1,12 +1,5 @@
 .reviewsContainer {
   height: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .reviewsContainer .reviewsRedLine {
@@ -17,53 +10,5 @@
 .reviewsContainer .reviewsMainContext {
   height: 90vh;
   background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.reviewsContainer .reviewsMainContext .reviewsSectionContainer {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  height: 50vh;
-  margin-left: 10%;
-}
-
-.reviewsContainer .reviewsMainContext .reviewsSectionContainer .reviewsSectionHeader {
-  background-color: #272838;
-  color: #ffffff;
-  width: 50%;
-  border-radius: 5px;
-}
-
-.reviewsContainer .reviewsMainContext .reviewsSectionContainer .reviewsSectionHeader .reviewsSectionHeaderText {
-  font-size: 12px;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  padding: 10px;
-}
-
-.reviewsContainer .reviewsMainContext .reviewsSectionContainer .reviewCarousel {
-  width: 30%;
-}
-
-.reviewsContainer .reviewsMainContext .reviewsPictureContainer {
-  background-image: url("../images/man.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  height: 50vh;
-  margin-left: 10px;
-  margin-right: 50px;
 }
 /*# sourceMappingURL=styles.css.map */

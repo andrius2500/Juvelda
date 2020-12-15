@@ -3,8 +3,8 @@ import "./styles/styles.css";
 
 function Header() {
     return (
-        <div>
-            <div className="header-cotainer">
+        <div className="header-container">
+            <div className="header-container__box">
                 <div className="company-header">
                     <h1 className="company-header__name">UAB "Juvelda"</h1>
                 </div>

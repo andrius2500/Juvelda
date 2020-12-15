@@ -1,7 +1,5 @@
 .reviewsContainer {
   height: 70vh;
-  display: flex;
-  flex-direction: column;
   .reviewsRedLine {
     height: 10vh;
     background-color: #d24747;
@@ -9,41 +7,5 @@
   .reviewsMainContext {
     height: 90vh;
     background-color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-    .reviewsSectionContainer {
-      flex-grow: 2;
-      height: 50vh;
-      margin-left: 10%;
-      .reviewCarousel {
-        
-        
-      }
-      .reviewsSectionHeader {
-        background-color: #272838;
-        color: #ffffff;
-        width: 50%;
-        border-radius: 5px;
-        .reviewsSectionHeaderText {
-          font-size: 12px;
-          text-align: center;
-          font-family: "Montserrat", sans-serif;
-          font-weight: 800;
-          padding: 10px;
-        }
-      }
-    }
-    .reviewsPictureContainer {
-      background-image: url("../images/man.jpg");
-      background-size: cover;
-      background-position: center;
-      border-radius: 10px;
-      flex-grow: 1;
-      height: 50vh;
-      margin-left: 10px;
-      margin-right: 50px;
-    }
   }
 }

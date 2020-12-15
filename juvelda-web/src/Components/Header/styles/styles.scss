@@ -1,44 +1,60 @@
-$primaryBackgroundColor: rgba(210, 71, 71, 0.7);
-$textColor: #FFFFFF;
+$primaryBackgroundColor: rgba(210, 71, 71, 0.75);
+$textColor: #ffffff;
 $secondaryBackgroundColor: #272838;
+$mainFont: "Montserrat", sans-serif;
 
-//need to make it RESPONSIVE
-body {
-    background-image: url("../images/test-image.jpg"); //background image need to be changed
-}
-
-.header-cotainer {
-    background-color: $primaryBackgroundColor;
-    width: 50%;
-    margin: auto;
+.header-container {
+    background-image: url("../images/test-image.jpg");
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    .company-header {
-        margin-bottom: 60px;
-        font-family: 'Montserrat', sans-serif; //Font need to be fixec
-        color: $textColor;
-        font-size: 50px;
-        text-align: center;
+    align-items: center;
+    .header-container__box {
+        background-color: $primaryBackgroundColor;
+        height: 55vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         .company-header__name {
-            width: 55%;
-            margin: auto;
+            font-family: $mainFont;
+            color: $textColor;
+            font-weight: 800;
+            font-size: 35px;
+        }
+        .company-description {
+            width: 80%;
+            text-align: center;
+            background-color: $secondaryBackgroundColor;
+            height: 10vh;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .company-description__paragraph {
+                text-transform: uppercase;
+                font-size: 25px;
+                font-weight: 800;
+                font-family: $mainFont;
+                color: $textColor;
+            }
         }
     }
-
-    .company-description__paragraph {
-        width: 90%;
-        margin: auto;
-        text-align: center;
-        background-color: $secondaryBackgroundColor;
-        height: 7vh;
-        text-transform: uppercase;
-        font-size: 35px;
-        font-weight: 800;
-        font-family: 'Montserrat', sans-serif;
-        color: $textColor;
-        padding-top: 15px;
-        border-radius: 10px;
+    @media (min-width: 900px) {
+        .header-container__box {
+            height: 100vh;
+            width: 60vw;
+            margin: auto;
+            .company-header__name {
+                font-size: 100px;
+            }
+            .company-description {
+                .company-description__paragraph {
+                    font-size: 36px;
+                }
+            }
+        }
     }
 }
