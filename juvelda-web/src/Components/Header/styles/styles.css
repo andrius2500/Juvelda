@@ -35,7 +35,7 @@
   color: #ffffff;
   font-weight: 800;
   text-align: center;
-  font-size: 35px;
+  font-size: 10vmin;
 }
 
 .header-container .header-container__box .company-description {
@@ -57,7 +57,7 @@
 
 .header-container .header-container__box .company-description .company-description__paragraph {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 4vmin;
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
@@ -68,12 +68,6 @@
     height: 100vh;
     width: 60vw;
     margin: auto;
-  }
-  .header-container .header-container__box .company-header__name {
-    font-size: 100px;
-  }
-  .header-container .header-container__box .company-description .company-description__paragraph {
-    font-size: 36px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
