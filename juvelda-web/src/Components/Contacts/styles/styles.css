@@ -17,7 +17,7 @@
 }
 
 .contact-container .contact-container__box {
-  font-size: 2vmin;
+  font-size: 1.7vmin;
   text-align: center;
   color: #ffffff;
   display: -webkit-box;
@@ -34,6 +34,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 2vmin;
+  font-family: "Montserrat", sans-serif;
 }
 
 .contact-container .contact-container__box .header {
@@ -61,7 +62,6 @@
 }
 
 .contact-container .contact-container__box .adress .adress__location {
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
@@ -110,7 +110,7 @@
   }
   .contact-container .map-container__location {
     width: 50vw;
-    height: 50vh;
+    height: 55vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */
