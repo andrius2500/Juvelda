@@ -5,16 +5,15 @@ import "./styles/styles.css";
 
 function Contacts() {
     return (
-        <div className="contacts-container">
+        <div className="contact-container">
 
-
-            <div className="contact-container">
-                <div className="contact-header__container">
-                    <h1 className="contact-header__text">Kontaktai</h1>
+            <div className="contact-container__box">
+                <div className="header">
+                    <h1 className="header__text">Kontaktai</h1>
                 </div>
                 <h2 className="company-name">
                     Juvelda servisas Vilniuje
-                    </h2>
+                </h2>
                 <div className="adress">
                     <p className="adress__location">
                         Antakalnio g. 23, Vilnius

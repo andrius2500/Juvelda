@@ -1,4 +1,4 @@
-.contacts-container {
+.contact-container {
   background-color: #272838;
   height: 70vh;
   display: -webkit-box;
@@ -16,7 +16,7 @@
           justify-content: center;
 }
 
-.contacts-container .contact-container {
+.contact-container .contact-container__box {
   font-size: 10px;
   text-align: center;
   color: #ffffff;
@@ -35,7 +35,7 @@
           align-items: center;
 }
 
-.contacts-container .contact-container .contact-header__container {
+.contact-container .contact-container__box .header {
   width: 50%;
   height: 5%;
   background-color: #ffffff;
@@ -51,30 +51,30 @@
           align-items: center;
 }
 
-.contacts-container .contact-container .contact-header__container .contact-header__text {
+.contact-container .contact-container__box .header .header__text {
   font-size: 15px;
   color: #272838;
 }
 
 @media (min-width: 1024px) {
-  .contacts-container {
+  .contact-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .contacts-container .contact-container {
+  .contact-container .contact-container__box {
     font-size: 15px;
     padding-right: 70px;
   }
-  .contacts-container .contact-container .contact-header__container {
+  .contact-container .contact-container__box .header {
     width: 80%;
   }
-  .contacts-container .contact-container .contact-header__container .contact-header__text {
+  .contact-container .contact-container__box .header .header__text {
     font-size: 30px;
     margin: 0px;
   }
-  .contacts-container .map-container__location {
+  .contact-container .map-container__location {
     width: 50vw;
     height: 50vh;
   }

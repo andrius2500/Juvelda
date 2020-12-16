@@ -2,14 +2,14 @@ $font: "Montserrat", sans-serif;
 $backgroundColor: #272838;
 $textcolor: #ffffff;
 
-.contacts-container {
+.contact-container {
     background-color: $backgroundColor;
     height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .contact-container {
+    .contact-container__box {
         font-size: 10px;
         text-align: center;
         color: $textcolor;
@@ -17,7 +17,7 @@ $textcolor: #ffffff;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .contact-header__container {
+        .header {
             width: 50%;
             height: 5%;
             background-color: $textcolor;
@@ -25,7 +25,7 @@ $textcolor: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
-            .contact-header__text {
+            .header__text {
                 font-size: 15px;
                 color: $backgroundColor;
             }
@@ -34,15 +34,15 @@ $textcolor: #ffffff;
 }
 
 @media (min-width: 1024px) {
-    .contacts-container {
+    .contact-container {
         flex-direction: row;
 
-        .contact-container {
+        .contact-container__box {
             font-size: 15px;
             padding-right: 70px;
-            .contact-header__container {
+            .header {
                 width: 80%;                
-                .contact-header__text {
+                .header__text {
                     font-size: 30px;
                     margin: 0px;
                 }
