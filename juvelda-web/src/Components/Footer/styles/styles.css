@@ -1,5 +1,78 @@
 .footer {
-  background-color: #D24747;
+  background-color: #d24747;
+}
+
+.component-container__footer {
   height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.contact-header {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-header .contact-header__name {
+  font-size: 2.5vmin;
+  font-weight: 400;
+  margin: 5px 0 0 0;
+}
+
+.contact-header .contact-header__description {
+  font-size: 1.5vmin;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+.links {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vmin;
+}
+
+.links .links__policy {
+  margin: 0 0 5px 0;
+}
+
+.links .links__tyres {
+  margin: 0 0 5px 0;
+}
+
+.links .links__page {
+  margin: 0 0 5px 0;
+}
+
+.date {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vmin;
+}
+
+.date .date__year {
+  margin: 5px 0 0 0;
+}
+
+@media (min-width: 568px) {
+  .component-container__footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

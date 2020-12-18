@@ -1,11 +1,129 @@
-.registrationContainer { 
-  height: 70vh; 
-  .registrationRedLine {
-    height: 10vh;
-    background-color: #D24747;
+$font: "Montserrat", sans-serif;
+
+.registration-main {
+  height: 60vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .registration-main__text {
+    width: 80vw;
+    height: 30vh;
+    .registration-header {
+      width: 100%;
+      height: 15%;
+      padding: 5px 0;
+      background-color: #272838;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1vh;
+      margin-bottom: 2vh;
+      .registration-header__text {
+        font-family: $font;
+        font-size: 5vmin;
+        font-weight: 800;
+        color: #ffffff;
+        margin: 0;
+      }
+    }
+    .registration-buttons__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .registration__button1 {
+        width: 75vw;
+        box-shadow: 5px 3px 7px -1px #8a2a21;
+        background: linear-gradient(to bottom, #d24747 5%, #f24437 100%);
+        background-color: #d24747;
+        border-radius: 5px;
+        color: #ffffff;
+        font-family: $font;
+        text-transform: uppercase;
+        font-size: 4vmin;
+        font-weight: 800;
+        padding: 7px 20px;
+        margin-bottom: 1vh;
+        &:hover {
+          opacity: 0.5;
+        }
+        &:focus {
+          outline: 0;
+        }
+      }
+      .registration__button2 {
+        width: 75vw;
+        box-shadow: 5px 3px 7px -1px #8a2a21;
+        background: linear-gradient(to bottom, #d24747 5%, #f24437 100%);
+        background-color: #d24747;
+        border-radius: 5px;
+        color: #ffffff;
+        font-family: $font;
+        text-transform: uppercase;
+        font-size: 4vmin;
+        font-weight: 800;
+        padding: 7px 20px;
+        &:hover {
+          opacity: 0.5;
+        }
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
   }
-  .registrationMainContext { 
-    height: 90vh;      
-    background-color: #ffffff;
+  .registration-main__image {
+    .calendar {
+      width: 75vw;
+    }
+  }
+  @media (min-width: 568px) {
+    flex-direction: row;
+    justify-content: center;
+
+    .registration-main__text {
+      width: 50vw;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .registration-header {
+        height: 7vh;
+        width: 40vw;
+        margin-bottom: 18vh;
+        .registration-header__text {
+          font-size: 4.5vmin;
+        }
+      }
+      .registration-buttons__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .registration__button1 {
+          width: 40vw;
+          font-size: 3.5vmin;
+        }
+        .registration__button2 {
+          width: 40vw;
+          font-size: 3.5vmin;
+        }
+      }
+    }
+
+    .registration-main__image {
+      .calendar {
+        width: 34vw;
+      }
+    }
+    .calendar {
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
 }

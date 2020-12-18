@@ -10,113 +10,76 @@ $textcolor: #ffffff;
     align-items: center;
     justify-content: center;
     .contact-container__box {
-        font-size: 10px;
+        font-size: 1.7vmin;
         text-align: center;
         color: $textcolor;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 2vmin;
+        font-family: $font;
         .header {
-            width: 50%;
+            width: 115%;
             height: 5%;
+            padding: 4px 0;
             background-color: $textcolor;
             border-radius: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
             .header__text {
-                font-size: 15px;
+                font-size: 4vmin;
+                font-weight: 800;
                 color: $backgroundColor;
+                margin: 0;
+            }
+        }
+        .adress {
+            .adress__location {
+                font-weight: bold;
+            }
+            .adress__email {
+                margin-bottom: -5px;
+            }
+        }
+        .contact-container {
+            color: #ffffff;
+            text-align: center;
+        }
+        .work-time {
+            .work-time__name {
+                font-weight: bold;
+            }
+            .work-time__workday--words {
+                font-weight: 500;
+                margin-bottom: -5px;
+            }
+            .work-time__saturday--words {
+                font-weight: 500;
+                margin-bottom: -5px;
+            }
+            .work-time__sunday {
+                font-weight: 500;
+                margin-bottom: -5px;
             }
         }
     }
+    .map-container__location {
+        width: 70vw;
+        height: 30vh;
+    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 568px) {
     .contact-container {
         flex-direction: row;
-
         .contact-container__box {
-            font-size: 15px;
             padding-right: 70px;
-            .header {
-                width: 80%;                
-                .header__text {
-                    font-size: 30px;
-                    margin: 0px;
-                }
-            }
         }
         .map-container__location {
             width: 50vw;
-            height: 50vh;
+            height: 55vh;
         }
     }
 }
-
-// .component-container__contact {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//   }
-
-// .contact-header-container {
-//     color:  $backgroundColor;
-//     grid-column-start: 1;
-//     grid-column-end: 3;
-//         .contact-header {
-//             background-color: #FFFFFF;
-//             color: $backgroundColor;
-//             width: 30%;
-//             border-radius: 5px;
-//             margin-left: 10%;
-//             text-align: center;
-//             font-family: $font;
-//             font-weight: 800;
-//             padding: 5px;
-//         }
-// }
-
-// .adress {
-//     .adress__location {
-//         font-family: $font;
-//         font-weight: bold;
-//     }
-//     .adress__email {
-//         margin-bottom: -10px;
-//     }
-// }
-
-// .contact-container {
-//     color: #FFFFFF;
-//     text-align: center;
-// }
-
-// .work-time {
-//     margin-top: 70px;
-//     .work-time__name {
-//         font-weight: bold;
-//     }
-//     .work-time__workday--words {
-//         font-weight: 500;
-//         margin-bottom: -10px;
-//     }
-//     .work-time__saturday--words {
-//         font-weight: 500;
-//         margin-bottom: -10px;
-//     }
-//     .work-time__sunday {
-//         font-weight: 500;
-//         margin-bottom: -10px;
-//     }
-// }
-
-// .map-container {
-//     margin-right: 50px;
-//     .map-container__location {
-//         width: 100%;
-//         height: 45vh;
-//         margin-top: 20px;
-//         border-radius: 10px;
-//     }
-// }

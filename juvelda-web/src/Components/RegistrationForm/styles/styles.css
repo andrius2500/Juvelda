@@ -1,14 +1,109 @@
-.registrationContainer {
+.registration-container {
   height: 70vh;
 }
 
-.registrationContainer .registrationRedLine {
+.registration-container .registration-redLine {
   height: 10vh;
-  background-color: #D24747;
+  background-color: #d24747;
 }
 
-.registrationContainer .registrationMainContext {
-  height: 90vh;
+.registration-container .registration-main {
+  height: 60vh;
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration-container .registration-main .registration-main__text {
+  width: 80vw;
+  height: 30vh;
+}
+
+.registration-container .registration-main .registration-main__text .registration-header {
+  width: 100%;
+  height: 15%;
+  padding: 5px 0;
+  background-color: #272838;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+
+.registration-container .registration-main .registration-main__text .registration-header .registration-header__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5vmin;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+.registration-container .registration-main .registration-main__text .registration-buttons__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration-container .registration-main .registration-main__text .registration-buttons__container .registration__button1 {
+  width: 75vw;
+  -webkit-box-shadow: 5px 3px 7px -1px #8a2a21;
+          box-shadow: 5px 3px 7px -1px #8a2a21;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #d24747), to(#f24437));
+  background: linear-gradient(to bottom, #d24747 5%, #f24437 100%);
+  background-color: #d24747;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 4vmin;
+  font-weight: 800;
+  padding: 7px 20px;
+  margin-bottom: 1vh;
+}
+
+.registration-container .registration-main .registration-main__text .registration-buttons__container .registration__button2 {
+  width: 75vw;
+  -webkit-box-shadow: 5px 3px 7px -1px #8a2a21;
+          box-shadow: 5px 3px 7px -1px #8a2a21;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #d24747), to(#f24437));
+  background: linear-gradient(to bottom, #d24747 5%, #f24437 100%);
+  background-color: #d24747;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 4vmin;
+  font-weight: 800;
+  padding: 7px 20px;
+}
+
+.registration-container .registration-main .registration-main__image .calendar {
+  width: 75vw;
 }
 /*# sourceMappingURL=styles.css.map */

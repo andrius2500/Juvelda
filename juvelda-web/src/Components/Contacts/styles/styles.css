@@ -17,7 +17,7 @@
 }
 
 .contact-container .contact-container__box {
-  font-size: 10px;
+  font-size: 1.7vmin;
   text-align: center;
   color: #ffffff;
   display: -webkit-box;
@@ -33,11 +33,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 2vmin;
+  font-family: "Montserrat", sans-serif;
 }
 
 .contact-container .contact-container__box .header {
-  width: 50%;
+  width: 115%;
   height: 5%;
+  padding: 4px 0;
   background-color: #ffffff;
   border-radius: 5px;
   display: -webkit-box;
@@ -52,11 +55,50 @@
 }
 
 .contact-container .contact-container__box .header .header__text {
-  font-size: 15px;
+  font-size: 4vmin;
+  font-weight: 800;
   color: #272838;
+  margin: 0;
 }
 
-@media (min-width: 1024px) {
+.contact-container .contact-container__box .adress .adress__location {
+  font-weight: bold;
+}
+
+.contact-container .contact-container__box .adress .adress__email {
+  margin-bottom: -5px;
+}
+
+.contact-container .contact-container__box .contact-container {
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact-container .contact-container__box .work-time .work-time__name {
+  font-weight: bold;
+}
+
+.contact-container .contact-container__box .work-time .work-time__workday--words {
+  font-weight: 500;
+  margin-bottom: -5px;
+}
+
+.contact-container .contact-container__box .work-time .work-time__saturday--words {
+  font-weight: 500;
+  margin-bottom: -5px;
+}
+
+.contact-container .contact-container__box .work-time .work-time__sunday {
+  font-weight: 500;
+  margin-bottom: -5px;
+}
+
+.contact-container .map-container__location {
+  width: 70vw;
+  height: 30vh;
+}
+
+@media (min-width: 568px) {
   .contact-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -64,19 +106,11 @@
             flex-direction: row;
   }
   .contact-container .contact-container__box {
-    font-size: 15px;
     padding-right: 70px;
-  }
-  .contact-container .contact-container__box .header {
-    width: 80%;
-  }
-  .contact-container .contact-container__box .header .header__text {
-    font-size: 30px;
-    margin: 0px;
   }
   .contact-container .map-container__location {
     width: 50vw;
-    height: 50vh;
+    height: 55vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */

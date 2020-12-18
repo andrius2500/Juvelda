@@ -8,7 +8,7 @@ function Reviews() {
       <div className='reviewsMainContext'>
         <div className='reviewsSectionContainer'>
           <div className='reviewsSectionHeader'>
-            <h1 className='reviewsSectionHeaderText'>Klientų atsiliepimai</h1>
+            <h1 className='reviewsSectionHeaderText'></h1>
           </div>
           <div className='reviewCarousel'>
             
