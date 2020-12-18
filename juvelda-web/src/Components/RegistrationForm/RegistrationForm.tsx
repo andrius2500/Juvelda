@@ -21,34 +21,7 @@ interface Props {
 
 
 const RegistrationForm: React.FC<Props> = ({ saveToDatabase }) => {
-
-    return (
-
-
-        <div className='registration-container'>
-            <div className='registration-redLine'></div>
-            <div className='registration-main'>
-                <div className='registration-main__text'>
-                    <div className="registration-header">
-                        <h1 className="registration-header__text">Registracija paslaugoms</h1>
-                    </div>
-                    <div className="registration-buttons__container">
-                        <button className="registration__button1">Registracija internetu</button>
-                        <button className="registration__button2">Registracija telefonu</button>
-                    </div>
-                </div>
-                <div className='registration-main__image'>
-                    <img className='calendar' src={Calendar} alt='calendar'></img>
-                </div>
-            </div>
-        </div >
-    )
-}
-
-export default RegistrationForm;
-
-
-{/* <Formik
+    {/* <Formik
                     initialValues={{
                         fullName: '',
                         email: '',
@@ -104,3 +77,22 @@ export default RegistrationForm;
                         </Form>
                     )}
                 </Formik> */}
+    return (
+        <div className='registration-main'>
+            <div className='registration-main__text'>
+                <div className="registration-header">
+                    <h1 className="registration-header__text">Registracija paslaugoms</h1>
+                </div>
+                <div className="registration-buttons__container">
+                    <button className="registration__button1">Registracija internetu</button>
+                    <button className="registration__button2">Registracija telefonu</button>
+                </div>
+            </div>
+            <div className='registration-main__image'>
+                <img className='calendar' src={Calendar} alt='calendar'></img>
+            </div>
+        </div>
+    )
+}
+
+export default RegistrationForm;
