@@ -3,6 +3,11 @@ import { Button, TextField, Modal } from "@material-ui/core";
 import { Form, Formik } from "formik";
 import '../RegistrationForm/styles/styles.scss'
 
+import Calendar from '../RegistrationForm/SVG images/Calendar.svg'
+
+
+
+
 interface Values {
     fullName: string;
     email: string;
@@ -20,10 +25,30 @@ const RegistrationForm: React.FC<Props> = ({ saveToDatabase }) => {
     return (
 
 
-        <div className='registrationContainer'>
-            <div className='registrationRedLine'></div>
-            <div className='registrationMainContext'>
-                {/* <Formik
+        <div className='registration-container'>
+            <div className='registration-redLine'></div>
+            <div className='registration-main'>
+                <div className='registration-main__text'>
+                    <div className="registration-header">
+                        <h1 className="registration-header__text">Registracija paslaugoms</h1>
+                    </div>
+                    <div className="registration-buttons__container">
+                        <button className="registration__button1">Registracija internetu</button>
+                        <button className="registration__button2">Registracija telefonu</button>
+                    </div>
+                </div>
+                <div className='registration-main__image'>
+                    <img className='calendar' src={Calendar} alt='calendar'></img>
+                </div>
+            </div>
+        </div >
+    )
+}
+
+export default RegistrationForm;
+
+
+{/* <Formik
                     initialValues={{
                         fullName: '',
                         email: '',
@@ -79,9 +104,3 @@ const RegistrationForm: React.FC<Props> = ({ saveToDatabase }) => {
                         </Form>
                     )}
                 </Formik> */}
-            </div>
-        </div >
-    )
-}
-
-export default RegistrationForm;
